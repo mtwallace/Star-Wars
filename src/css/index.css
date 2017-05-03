@@ -1,0 +1,96 @@
+body {
+    background: url('../../public/images/background.jpg') no-repeat;
+    background-size: cover;
+}
+#loader {
+    background: rgba(0,0,0, 0.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#loader span {
+    display: block;
+    height: 50px;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+}
+#outer-container {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 0;
+}
+#outer-container.open {
+    transition: max-height 1s ease-out;
+    max-height: 100%;
+}
+.info {
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 5px 20px -4px rgba(0,0,0, .25);
+}
+#sidebar {
+    display: none;
+    padding: 10px;
+}
+.characters {
+    margin-bottom: 30px;
+}
+.chart-container {
+    background-color: white;
+    padding: 10px;
+}
+#films {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.card {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px;
+}
+.film {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+img {
+    max-width: 100%;
+}
+h2 {
+    border-bottom: solid 1px #ccc;
+    font-size: 14px;
+}
+h3 {
+    border-bottom: solid 1px #ccc;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+h4 {
+    border-bottom: solid 1px #ccc;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 5px;
+}
+h4 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 200;
+}
+ul {
+    margin-top: auto;
+}
