@@ -1,4 +1,4 @@
-# Uptake Star Wars Project
+# Star Wars Project
 
 --- Install Packages ---
 1) Open up terminal and CD into Uptake folder
